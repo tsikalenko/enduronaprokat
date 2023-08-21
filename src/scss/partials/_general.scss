@@ -1,0 +1,14 @@
+@import "colors";
+@import "mixins";
+
+*{
+  font-family: Roboto;
+}
+
+.page{
+  background-color: $main-bg-color;
+}
+
+.container{
+  @include flex($dir: 'column');
+}
