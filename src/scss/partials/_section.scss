@@ -1,0 +1,58 @@
+@import "mixins";
+
+.section {
+  position: relative;
+  top: -30px;
+  @include respond(laptop) {
+    top: -50px;
+  }@include respond(desktop) {
+    top: -90px;
+  }
+
+  &__header {
+    width: 100vw;
+    overflow: hidden;
+    @include flex($dir: 'column');
+    position: relative;
+    //top: -50%;
+    height: 180px;
+    z-index: 10;
+    @include respond(desktop) {
+      height: 270px;
+    }
+  }
+
+  &__mask {
+    position: absolute;
+
+    &--lg {
+      @include respond(laptop) {
+        width: 100%;
+      }
+
+    }
+
+    &--sm {
+      width: 90%;
+      max-width: 500px;
+    }
+  }
+
+  &__title {
+    z-index: 10;
+    width: 60%;
+    max-width: 350px;
+  }
+
+  &__img{
+    display: none;
+    @include respond(tablet) {
+      display: block;
+      position: absolute;
+      left: -10%;
+      top: -5%;
+      z-index: 10;
+      max-height: 200px;
+    }
+  }
+}
