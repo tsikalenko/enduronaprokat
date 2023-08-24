@@ -1,0 +1,44 @@
+@import "mixins";
+
+.conditions {
+  &__list {
+    @include flex($dir: 'column');
+    width: 80%;
+    max-width: 800px;
+
+    @include respond(tablet){
+      @include flex($dir: 'column', $align: 'flex-start')
+    }
+  }
+
+  &__item {
+    @include flex($dir: 'column');
+    margin-top: 20px;
+
+    @include respond(tablet){
+      @include flex()
+    }
+  }
+
+  &__img{
+    height: 60px;
+
+    @include respond(tablet){
+      margin-right: 20px;
+    }
+  }
+  
+  &__info{
+    text-align: center;
+
+    @include respond(tablet){
+      text-align: left;
+    }
+  }
+
+  &__title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}

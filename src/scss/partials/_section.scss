@@ -3,6 +3,7 @@
 
 .section {
   @include flex($dir: 'column');
+  width: 100%;
   position: relative;
   top: -30px;
   padding-bottom: 50px;
@@ -14,7 +15,7 @@
   }
 
   &__header {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     @include flex($dir: 'column');
     position: relative;
@@ -28,6 +29,7 @@
 
   &__mask {
     position: absolute;
+    //width: 80vw;
 
     &--lg {
       @include respond(laptop) {
