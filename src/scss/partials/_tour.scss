@@ -14,21 +14,26 @@
     }
     @include respond(laptop){
       @include flex();
-      padding: 40px 0;
+      padding: 70px 0;
     }
     @include respond(desktop){
       top: -100px;
-      padding: 80px 0;
+      padding: 90px 0;
     }
   }
 
   &__item {
-    @include flex($dir: 'column', $justify: 'space-between');
+    @include flex($dir: 'column');
     background-size: cover;
     background-position: center;
-    padding: 40px 0;
-    height: 600px;
+    padding: 50px 0 80px;
+    height: 100vh;
     width: 100%;
+
+    @include respond(tablet){
+      height: 700px;
+      @include flex($dir: 'column', $justify: 'space-between');
+    }
 
     @include respond(laptop){
       background: none !important;

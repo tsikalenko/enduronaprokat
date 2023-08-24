@@ -1,0 +1,91 @@
+@import "mixins";
+
+.equipment{
+
+  &__info{
+    text-align: center;
+    width: 80%;
+  }
+
+  &__mid{
+    @include flex($dir: 'column');
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+     max-width: 300px;
+  }
+
+  &__btn{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 50px 0;
+    left: -10%;
+  }
+
+  &__circle{
+    position: absolute;
+    opacity: 100%;
+
+
+    &--lg{
+      height: 100%;
+      top: 0;
+      animation: vanishing 4000ms linear infinite;
+
+    }
+
+    &--md{
+      height: 80%;
+      top: 10%;
+      right: 10%;
+      animation: vanishing 3500ms linear infinite;
+
+    }
+
+    &--sm{
+      height: 60%;
+      top: 20%;
+      right: 20%;
+
+      animation: vanishing 3000ms linear infinite;
+
+    }
+  }
+
+  &__click{
+    position: absolute;
+    height: 40%;
+    top: 30%;
+    right: 30%;
+
+    animation: vanishing 3000ms linear infinite;
+  }
+
+  &__racer{
+    height: 300px;
+    position: absolute;
+    right: 0;
+    z-index: -10;
+  }
+
+  &__item{
+    width: 50%;
+  }
+
+  &__img{
+    width: 50%;
+  }
+}
+
+@keyframes vanishing {
+  0%{
+    opacity: 100%;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}

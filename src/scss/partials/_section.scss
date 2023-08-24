@@ -13,9 +13,9 @@
   }
 
   &--up{
-    top: -70px;
+    top: -110px;
     @include respond(laptop) {
-      top: -90px;
+      top: -130px;
     }
     @include respond(desktop) {
       top: -130px;
@@ -74,6 +74,7 @@
       max-height: 250px;
     }
     @include respond(desktop) {
+      top: -125px;
       max-height: 300px;
     }
 
@@ -96,7 +97,7 @@
 
       @include respond(desktop){
         max-height: 250px;
-        top: 10px;
+        top: -30px;
       }
     }
   }
