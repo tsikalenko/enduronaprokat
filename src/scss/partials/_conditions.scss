@@ -7,6 +7,7 @@
     max-width: 800px;
 
     @include respond(tablet){
+      width: auto;
       @include flex($dir: 'column', $align: 'flex-start')
     }
   }

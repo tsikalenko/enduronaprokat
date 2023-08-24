@@ -1,0 +1,55 @@
+@import "mixins";
+
+.tour {
+
+  &__list{
+    width: 100%;
+    position: relative;
+    top: -40px;
+    background-size: cover;
+    @include flex($dir: 'column');
+
+    @include respond(tablet){
+      @include flex();
+    }
+    @include respond(laptop){
+      @include flex();
+      padding: 40px 0;
+    }
+    @include respond(desktop){
+      top: -100px;
+      padding: 80px 0;
+    }
+  }
+
+  &__item {
+    @include flex($dir: 'column', $justify: 'space-between');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    height: 600px;
+    width: 100%;
+
+    @include respond(laptop){
+      background: none !important;
+      width: auto;
+      height: 500px;
+    }
+  }
+
+  &__info {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  &__description {
+    //margin: 20px 0;
+    width: 80%;
+    max-width: 200px;
+
+    //@include respond(laptop){
+    //  display: none;
+    //}
+  }
+
+}

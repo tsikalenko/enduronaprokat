@@ -5,13 +5,20 @@
   @include flex($dir: 'column');
   width: 100%;
   position: relative;
-  top: -30px;
   padding-bottom: 50px;
   @include respond(laptop) {
     top: -50px;
   }
   @include respond(desktop) {
     top: -90px;
+  }
+
+  &--short{
+    padding: 0;
+  }
+
+  &--up{
+    top: -30px;
   }
 
   &__header {
@@ -71,8 +78,27 @@
       max-height: 350px;
     }
 
-    &--full{
+    &--full {
       left: -50px;
+    }
+
+    &--right {
+      @include respond(tablet) {
+        left: unset;
+        right: 0;
+        max-height: 110px;
+        top: 30px;
+      }
+
+      @include respond(laptop){
+        max-height: 200px;
+        top: -10px;
+      }
+
+      @include respond(desktop){
+        max-height: 250px;
+        top: 10px;
+      }
     }
   }
 
@@ -82,5 +108,6 @@
     font-size: 18px;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 20px;
   }
 }

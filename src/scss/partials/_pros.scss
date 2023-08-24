@@ -4,7 +4,6 @@
 .pros {
 
   &__list {
-    margin-top: 50px;
     @include flex($dir: 'column');
     @include respond(tablet){
       max-width: 500px;
