@@ -4,7 +4,12 @@
 
   &__info{
     text-align: center;
-    width: 80%;
+    width: 90%;
+    font-size: 12px;
+
+    &--close{
+      display: none;
+    }
   }
 
   &__mid{
@@ -55,9 +60,9 @@
 
   &__click{
     position: absolute;
-    height: 40%;
-    top: 30%;
-    right: 30%;
+    height: 36%;
+    top: 33%;
+    right: 33%;
 
     animation: vanishing 3000ms linear infinite;
   }
@@ -69,12 +74,30 @@
     z-index: -10;
   }
 
+  &__list{
+    display: none;
+
+    &--open{
+      @include flex($dir: 'column', $justify: 'space-between');
+    }
+  }
+
   &__item{
-    width: 50%;
+    @include flex($dir: 'column');
+    width: 80%;
+    margin-bottom: 20px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 
   &__img{
-    width: 50%;
+    max-width: 80px;
+  }
+
+  &__title{
+    font-size: 13px;
   }
 }
 
