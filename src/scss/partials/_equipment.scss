@@ -2,10 +2,48 @@
 
 .equipment{
 
+  &__container{
+    width: 90%;
+    @include flex($dir: 'column');
+
+    @include respond(tablet){
+      @include flex();
+    }
+
+    @include respond(laptop){
+      max-width: 1000px;
+    }
+  }
+
   &__info{
     text-align: center;
     width: 90%;
     font-size: 12px;
+
+    @include respond(tablet){
+      align-self: flex-start;
+      font-size: 14px;
+    }
+
+    @include respond(laptop){
+      font-size: 18px;
+    }
+
+    //@include respond(desktop){
+    //  font-size: 18px;
+    //}
+
+    &--left{
+      @include respond(tablet) {
+        text-align: left;
+      }
+    }
+
+    &--right{
+      @include respond(tablet) {
+        text-align: right;
+      }
+    }
 
     &--close{
       display: none;
@@ -15,9 +53,12 @@
   &__mid{
     @include flex($dir: 'column');
     position: relative;
-    overflow: hidden;
+    //overflow: hidden;
     width: 90%;
-     max-width: 300px;
+    max-width: 250px;
+    @include respond(tablet){
+      min-width: 250px;
+    }
   }
 
   &__btn{
