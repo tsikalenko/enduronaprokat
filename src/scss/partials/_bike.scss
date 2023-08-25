@@ -1,0 +1,57 @@
+@import "colors";
+@import "mixins";
+
+.bike {
+  &__container {
+    background: url("./img/bike-bg.png") center / cover;
+    width: 100%;
+    position: relative;
+    top: -30px;
+    color: $about-bg-color;
+    z-index: 0;
+    padding: 50px 0;
+
+    @include flex($dir: 'column')
+  }
+
+  &__list{
+    @include flex($dir: 'column')
+  }
+
+  &__item{
+    width: 90%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo{
+    width: 300px;
+    animation: resizing 2s linear infinite;
+    position: absolute;
+    z-index: -10;
+    left: calc(50% - 150px);
+    top: 0;
+  }
+
+  &__img{
+    width: 300px;
+    margin-top: 50px;
+  }
+}
+
+@keyframes resizing {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}

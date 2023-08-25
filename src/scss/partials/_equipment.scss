@@ -23,15 +23,12 @@
     @include respond(tablet){
       align-self: flex-start;
       font-size: 14px;
+      width: 400px;
     }
 
     @include respond(laptop){
       font-size: 18px;
     }
-
-    //@include respond(desktop){
-    //  font-size: 18px;
-    //}
 
     &--left{
       @include respond(tablet) {
@@ -53,7 +50,6 @@
   &__mid{
     @include flex($dir: 'column');
     position: relative;
-    //overflow: hidden;
     width: 90%;
     max-width: 250px;
     @include respond(tablet){
