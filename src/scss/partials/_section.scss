@@ -5,30 +5,29 @@
   @include flex($dir: 'column');
   width: 100%;
   position: relative;
-  padding-bottom: 50px;
 
+  //&--short{
+  //  padding: 0;
+  //}
 
-  &--short{
-    padding: 0;
-  }
-
-  &--up{
-    top: -110px;
-    @include respond(laptop) {
-      top: -130px;
-    }
-    @include respond(desktop) {
-      top: -130px;
-    }
-  }
+  //&--up{
+  //  top: -110px;
+  //  @include respond(laptop) {
+  //    top: -130px;
+  //  }
+  //  @include respond(desktop) {
+  //    top: -130px;
+  //  }
+  //}
 
   &__header {
     width: 100%;
     overflow: hidden;
     @include flex($dir: 'column');
-    position: relative;
+    position: absolute;
     height: 180px;
     z-index: 10;
+    top: -50px;
     @include respond(desktop) {
       //height: 270px;
     }
