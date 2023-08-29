@@ -1,0 +1,53 @@
+@import "colors";
+@import "mixins";
+
+.contacts {
+  padding-top: 200px;
+
+  &__item {
+    position: relative;
+
+    @include respond(laptop){
+      @include flex();
+      width: 100%;
+      max-width: 1000px;
+      margin-bottom: 50px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__map {
+    display: block;
+    width: 100vw;
+    height: 70vh;
+
+    @include respond(laptop) {
+      max-width: 700px;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    color: $accent-color;
+    font-size: 12px;
+    background-color: $main-bg-color;
+    z-index: 10;
+    top: 40%;
+    right: 0;
+    padding: 15px;
+
+    @include respond(laptop){
+      position: relative;
+      flex-grow: 1;
+      font-size: 16px;
+    }
+  }
+
+  &__social{
+    margin-top: 30px;
+    //height: 50px;
+  }
+}

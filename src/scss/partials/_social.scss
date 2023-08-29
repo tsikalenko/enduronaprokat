@@ -1,0 +1,23 @@
+@import "colors";
+@import "mixins";
+
+.social {
+  @include flex($justify: 'space-between');
+
+  &__link {
+    display: block;
+    margin: 0 5px;
+  }
+
+  &__logo {
+    fill: $accent-color;
+
+    &--sm {
+      height: 30px;
+    }
+
+    &--lg {
+      height: 50px;
+    }
+  }
+}

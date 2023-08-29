@@ -1,0 +1,27 @@
+@import "colors";
+
+.intro {
+  background: rgba(0,0,0,0.6) url("./img/intro.jpg") center / cover fixed;
+  background-blend-mode: color;
+  color: $main-color;
+  padding: 100px 0;
+  height: 120vh;
+
+  position: relative;
+  //top: -80px;
+  z-index: -10;
+
+  &__title {
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    max-width: 1200px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}

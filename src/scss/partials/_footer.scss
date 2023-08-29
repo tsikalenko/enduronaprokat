@@ -1,0 +1,14 @@
+@import "mixins";
+@import "colors";
+.footer{
+  @include flex($dir: column);
+  text-align: center;
+  color: $footer-text-color;
+  font-size: 14px;
+  width: 90%;
+
+  &__logo{
+    width: 50%;
+    max-width: 150px;
+  }
+}

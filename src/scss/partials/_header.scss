@@ -47,16 +47,8 @@
     color: $accent-color
   }
 
-  .social{
+  &__social{
     margin: 10px 0 30px;
-    @include flex($justify: 'space-between');
-    &__link{
-      display: block;
-      margin: 0 5px;
-    }
-    &__logo {
-      fill: $accent-color;
-      height: 100%;
-    }
+
   }
 }
