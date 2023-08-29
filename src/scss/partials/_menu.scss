@@ -1,0 +1,27 @@
+@import "colors";
+@import "mixins";
+
+.menu{
+
+  &--col{
+    @include flex($dir: 'column');
+  }
+  &--row{
+    @include flex($wrap: 'wrap');
+  }
+  flex-grow: 1;
+
+  &__item{
+    margin: 8px 0;
+    font-size: 20px;
+    color: $main-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+
+    &--sm{
+      font-size: 14px;
+      margin: 10px 10px;
+    }
+  }
+}

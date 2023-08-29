@@ -6,9 +6,26 @@
   color: $footer-text-color;
   font-size: 14px;
   width: 90%;
+  margin: 30px auto;
 
   &__logo{
     width: 50%;
     max-width: 150px;
+    margin: 20px 0;
+  }
+
+  &__rights{
+    margin: 30px 0;
+  }
+
+  &__policy{
+    @include flex($wrap: 'wrap');
+  }
+
+  &__link{
+    margin: 0 10px;
+    &:last-child{
+      margin: 0;
+    }
   }
 }
