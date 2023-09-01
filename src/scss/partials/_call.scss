@@ -1,0 +1,35 @@
+@import "mixins";
+@import "colors";
+
+.call{
+  padding: 200px 0 150px;
+
+  &__form{
+    @include flex($dir: column);
+    width: 100%;
+  }
+
+  &__input{
+    width: 80%;
+    max-width: 500px;
+    margin: 10px 0;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 10px;
+
+    &--submit{
+      background-color: $accent-color;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $about-bg-color;
+        color: $accent-color;
+
+        transition: 300ms;
+      }
+    }
+  }
+}
