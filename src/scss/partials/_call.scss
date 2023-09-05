@@ -3,6 +3,8 @@
 
 .call{
   padding: 200px 0 150px;
+  background: $bg-dark-mask-color url("./img/call-bg.jpg") center / cover;
+  background-blend-mode: color;
 
   &__form{
     @include flex($dir: column);
@@ -30,6 +32,28 @@
 
         transition: 300ms;
       }
+    }
+  }
+
+  &__notification{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0;
+    text-align: center;
+    display: none;
+
+    &--error{
+      color: $error-color;
+    }
+    &--reject{
+      color: $error-color;
+    }
+    &--success{
+      color: $success-color;
+    }
+
+    &--open{
+      display: block;
     }
   }
 }

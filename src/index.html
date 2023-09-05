@@ -48,6 +48,8 @@
 </head>
 <body
     class='page'>
+<div
+    id='top'></div>
 <header
     class='header'>
     <img
@@ -58,23 +60,20 @@
         class='header__navbar'>
         <ul class='header__menu menu'>
             <li class='menu__item'>
-                <a href='#'>Головна</a>
+                <a href='#main'>Головна</a>
             </li>
             <li class='menu__item'>
-                <a href='#'>Тури</a>
+                <a href='#tours'>Тури</a>
             </li>
             <li class='menu__item'>
-                <a href='#'>Умови</a>
+                <a href='#conditions'>Умови</a>
             </li>
             <li class='menu__item'>
-                <a href='#'>Блог</a>
+                <a href='#contacts'>Контакти</a>
             </li>
             <li class='menu__item'>
-                <a href='#'>Контакти</a>
-            </li>
-            <li class='menu__item'>
-                <a href='#'>Про
-                            нас</a>
+                <a href='#about'>Про
+                                 нас</a>
             </li>
         </ul>
         <a href='tel:+380637370846'
@@ -136,7 +135,8 @@
     </div>
 </header>
 <section
-    class='intro container'>
+    class='intro container'
+    id='main'>
     <img
         src='./img/main-title.png'
         alt='Ендуро тури'
@@ -146,10 +146,11 @@
         <br />
         Для активного та динамічного відпочинку.
     </p>
-    <button
+    <a
+        href='#call'
         class='btn'>
         Замовити
-    </button>
+    </a>
 </section>
 
 <section
@@ -238,7 +239,8 @@
 </section>
 
 <section
-    class='conditions section'>
+    class='conditions section'
+    id='conditions'>
     <div
         class='section__header'>
         <img
@@ -302,7 +304,8 @@
 </section>
 
 <section
-    class='tour section section--short'>
+    class='tour section section--short'
+    id='tours'>
     <div
         class='section__header'>
         <img
@@ -530,26 +533,12 @@
         defer></script>
     <div
         class='elfsight-app-747fad29-2554-4363-b21f-15985b536023'></div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div
-        id='widbox'
-        style='width: 100%; height: 100%;'
-        data-widbox-widget-id='JJPQls9GBbgzzSPpzFm7'></div>
-    <script
-        src='https://widbox.sfo3.cdn.digitaloceanspaces.com/scripts/widbox.min.js'
-        defer></script>
-
-
 </section>
 
 
 <section
-    class='about section'>
+    class='about section'
+    id='about'>
     <div
         class='section__header'>
         <img
@@ -575,6 +564,7 @@
 </section>
 
 <section
+    id='call'
     class='call section'>
     <div
         class='section__header'>
@@ -582,10 +572,10 @@
             src='./img/title-mask.png'
             alt='orange mask'
             class='section__mask section__mask--lg'>
-<!--        <img-->
-<!--            src='./img/title-mask-gray.png'-->
-<!--            alt='gary mask'-->
-<!--            class='section__mask section__mask&#45;&#45;sm'>-->
+        <!--        <img-->
+        <!--            src='./img/title-mask-gray.png'-->
+        <!--            alt='gary mask'-->
+        <!--            class='section__mask section__mask&#45;&#45;sm'>-->
         <!--        <img-->
         <!--            src='./img/contacts.png'-->
         <!--            alt='contacts'-->
@@ -597,22 +587,32 @@
             type='email'
             class='call__input'
             name='email'
-            placeholder='Email'><input
-        type='tel'
-        class='call__input'
-        name='phone'
-        placeholder='Телефон'><input
-        type='text'
-        class='call__input'
-        name='name'
-        placeholder="І'мя">
+            placeholder='Email'>
         <input
-            type='submit' value='Замовити' class='call__input call__input--submit'>
+            type='tel'
+            class='call__input'
+            name='phone'
+            placeholder='Телефон'>
+        <input
+            type='text'
+            class='call__input'
+            name='name'
+            placeholder="І'мя">
+        <p class='call__notification call__notification--error'>Необхідно заповнити всі поля</p>
+        <input
+            type='submit'
+            value='Замовити'
+            class='call__input call__input--submit'
+            name='send'>
+        <p class='call__notification call__notification--reject'>Шось пішло не так спробуйте ще раз</p>
+        <p class='call__notification call__notification--success'>Запит успішно надісланий</p>
     </form>
 
 </section>
+
 <section
-    class='contacts section'>
+    class='contacts section'
+    id='contacts'>
     <div
         class='section__header'>
         <img
@@ -733,22 +733,19 @@
     class='footer'>
     <ul class='footer__menu menu menu--row'>
         <li class='menu__item menu__item--sm'>
-            <a href='#'>Головна</a>
+            <a href='#main'>Головна</a>
         </li>
         <li class='menu__item menu__item--sm'>
-            <a href='#'>Тури</a>
+            <a href='#tours'>Тури</a>
         </li>
         <li class='menu__item menu__item--sm'>
-            <a href='#'>Умови</a>
+            <a href='#conditions'>Умови</a>
         </li>
         <li class='menu__item menu__item--sm'>
-            <a href='#'>Блог</a>
+            <a href='#contacts'>Контакти</a>
         </li>
         <li class='menu__item menu__item--sm'>
-            <a href='#'>Контакти</a>
-        </li>
-        <li class='menu__item menu__item--sm'>
-            <a href='#'>Про нас</a>
+            <a href='#about'>Про нас</a>
         </li>
     </ul>
     <img
@@ -757,15 +754,31 @@
         class='footer__logo'>
     <p class='footer__rights'>© All Rights Reserved EnduroNaprokat
                               info@enduronaprokat.com</p>
-    <div
-        class='footer__policy'>
-        <a href=''
-           class='footer__link'>Політика конфіденційності</a>
-        <a href=''
-           class='footer__link'>Політика Cookies</a>
-    </div>
+<!--    <div-->
+<!--        class='footer__policy'>-->
+<!--        <a href=''-->
+<!--           class='footer__link'>Політика конфіденційності</a>-->
+<!--        <a href=''-->
+<!--           class='footer__link'>Політика Cookies</a>-->
+<!--    </div>-->
 </footer>
 
+<a
+    href='#top'
+    class='scroll scroll--hide'>
+    <svg
+        class='scroll__arrow'
+        id='Layer_1'
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 330 330'
+        xml:space='preserve'>
+<path
+    id='XMLID_224_'
+    d='M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+	l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+	C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z' />
+</svg>
+</a>
 <script
     src='./scripts.min.js'>
 </script>
