@@ -4,7 +4,6 @@ const form = document.querySelector('.call__form');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    // console.log(form.name.value);
     const error = document.querySelector('.call__notification--error');
     const reject = document.querySelector('.call__notification--reject');
     const success = document.querySelector('.call__notification--success');
@@ -18,11 +17,12 @@ form.addEventListener('submit', (e) => {
     } else {
         error.classList.remove('call__notification--open');
         send.disabled = true;
-        sendToTelegram(`New lead:
-        email: ${email},
-        phone: ${phone},
-        name: ${name}
-        `).then((response) => {
+        sendToTelegram(
+            `New lead
+email: ${email}
+phone: ${phone}
+name: ${name}`,
+        ).then((response) => {
             if (response.ok) {
                 success.classList.add('call__notification--open');
             } else {
