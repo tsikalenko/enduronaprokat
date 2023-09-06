@@ -13,3 +13,7 @@
 .container{
   @include flex($dir: 'column');
 }
+
+.accent{
+  color: $yellow-color;
+}
