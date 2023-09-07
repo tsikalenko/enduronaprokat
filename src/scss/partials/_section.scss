@@ -3,7 +3,7 @@
 
 .section {
   @include flex($dir: 'column');
-  width: 100%;
+  width: 100vw;
   position: relative;
 
   &__header {

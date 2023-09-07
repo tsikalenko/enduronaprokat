@@ -1,3 +1,8 @@
 .gallery{
   padding: 150px 0 100px;
+
+  &__instagram{
+    width: 100%;
+    overflow: hidden;
+  }
 }
