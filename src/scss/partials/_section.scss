@@ -34,8 +34,13 @@
 
   &__title {
     z-index: 10;
-    max-width: 350px;
-    max-height: 30px;
+    //max-width: 350px;
+    //max-height: 30px;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'Rubik Dirt', cursive;
+    color: $yellow-color;
+    text-align: center;
   }
 
   &__img {
@@ -69,7 +74,7 @@
         left: unset;
         right: 0;
         max-height: 110px;
-        top: 30px;
+        top: -15px;
       }
 
       @include respond(laptop){

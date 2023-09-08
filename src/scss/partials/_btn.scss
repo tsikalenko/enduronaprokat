@@ -1,11 +1,27 @@
 @import "colors";
+@import "mixins";
 
 .btn{
-  padding: 5px 11px;
+  padding: 10px 20px;
   font-size: 32px;
   text-transform: uppercase;
   background-color: $accent-color;
-  color: $about-bg-color;
+  color: $accent-dark-color;
   border-radius: 30px;
   cursor: pointer;
+  font-weight: 700;
+  border: 2px solid $accent-dark-color;
+  z-index: 10;
+
+  &:hover{
+    background-color: $about-bg-color;
+    color: $accent-color;
+    transition: 300ms;
+  }
+
+  &--sm{
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 15px 0;
+  }
 }

@@ -43,7 +43,14 @@
         href='https://fonts.gstatic.com'
         crossorigin>
     <link
-        href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Roboto:wght@400;700&display=swap'
+        rel='preconnect'
+        href='https://fonts.googleapis.com'>
+    <link
+        rel='preconnect'
+        href='https://fonts.gstatic.com'
+        crossorigin>
+    <link
+        href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik+Dirt&display=swap'
         rel='stylesheet'>
 </head>
 <body
@@ -76,8 +83,9 @@
                                  нас</a>
             </li>
         </ul>
-        <a href='tel:+380637370846'
-           class='header__phone'>+380637370846</a>
+        <a href='tel:+380938627846'
+           class='header__phone'>+38(093)862-78-46</a>
+
         <div
             class='header__social social'>
             <a href='https://www.facebook.com/enduronaprokat/'
@@ -137,20 +145,30 @@
 <section
     class='intro container'
     id='main'>
-    <img
-        src='./img/main-title.png'
-        alt='Ендуро тури'
-        class='intro__title'>
+    <h1 class='intro__title'>Ендуро тури</h1>
     <p class='intro__description'>
         Тури на позашляхових мотоциклах Ендуро пересіченою місцевістю з природними перешкодами підйомами, спусками та поворотами.
         <br />
         Для активного та динамічного відпочинку.
     </p>
-    <a
-        href='#call'
-        class='btn'>
-        Замовити
-    </a>
+    <div
+        class='intro__btn'>
+        <a
+            href='#call'
+            class='btn'>
+            Замовити
+        </a>
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 250 250'
+            class='intro__circle'>
+            <circle
+                cx='125'
+                cy='125'
+                r='115'
+            ></circle>
+        </svg>
+    </div>
 </section>
 
 <section
@@ -165,10 +183,8 @@
             src='./img/title-mask-gray.png'
             alt='gary mask'
             class='section__mask section__mask--sm'>
-        <img
-            src='./img/pros.png'
-            alt='our pros'
-            class='section__title'>
+        <h2
+            class='section__title'>Наші переваги</h2>
     </div>
     <img
         src='./img/pros-man.png'
@@ -251,10 +267,8 @@
             src='./img/title-mask-gray.png'
             alt='gary mask'
             class='section__mask section__mask--sm'>
-        <img
-            src='./img/conditions.png'
-            alt='our pros'
-            class='section__title'>
+        <h2
+            class='section__title'>Умови прокату</h2>
     </div>
     <img
         src='./img/conditions-img.png'
@@ -316,10 +330,8 @@
             src='./img/title-mask-gray.png'
             alt='gary mask'
             class='section__mask section__mask--sm'>
-        <img
-            src='./img/tours.png'
-            alt='our pros'
-            class='section__title'>
+        <h2
+            class='section__title'>Наші тури</h2>
     </div>
     <img
         src='./img/tours-img.png'
@@ -331,9 +343,11 @@
         <div
             class='tour__item'
             style='background-image: url("./img/tour-bg-1.jpg")'>
-            <div class='tour__container'>
+            <div
+                class='tour__container'>
                 <h4 class='tour__name'>Мото тур
-                    <br>"Light"</h4>
+                    <br>"Light"
+                </h4>
                 <ul class='tour__list'>
                     <li class='tour__text'>Наш мотоцикл</li>
                     <li class='tour__text'>Наше екіпірування</li>
@@ -343,15 +357,22 @@
                     <li class='tour__text'>Весь захід до 3-х годин</li>
                 </ul>
                 <h4 class='tour__cost'>3000
-                    <br> UAH <span class='accent'>/</span> людина</h4>
+                    <br> UAH
+                    <span
+                        class='accent'>/</span> людина
+                </h4>
+                <a href='#call'
+                   class='btn btn--sm'>Забронювати</a>
             </div>
         </div>
         <div
             class='tour__item'
             style='background-image: url("./img/tour-bg-2.png")'>
-            <div class='tour__container'>
+            <div
+                class='tour__container'>
                 <h4 class='tour__name'>Мото тур
-                    <br>"All Day"</h4>
+                    <br>"All Day"
+                </h4>
                 <ul class='tour__list'>
                     <li class='tour__text'>Наш мотоцикл</li>
                     <li class='tour__text'>Наше екіпірування</li>
@@ -361,15 +382,22 @@
                     <li class='tour__text'>Близько 100 км шляху</li>
                 </ul>
                 <h4 class='tour__cost'>8000
-                    <br> UAH <span class='accent'>/</span> людина</h4>
+                    <br> UAH
+                    <span
+                        class='accent'>/</span> людина
+                </h4>
+                <a href='#call'
+                   class='btn btn--sm'>Забронювати</a>
             </div>
         </div>
         <div
             class='tour__item'
             style='background-image: url("./img/tour-bg-3.jpg")'>
-            <div class='tour__container'>
+            <div
+                class='tour__container'>
                 <h4 class='tour__name'>Індивідуальне
-                    <br>заняття</h4>
+                    <br>заняття
+                </h4>
                 <ul class='tour__list'>
                     <li class='tour__text'>Наш мотоцикл</li>
                     <li class='tour__text'>Наше екіпірування</li>
@@ -379,7 +407,12 @@
                     <li class='tour__text'>Весь захід до 3-х годин</li>
                 </ul>
                 <h4 class='tour__cost'>5000
-                    <br> UAH <span class='accent'>/</span> людина</h4>
+                    <br> UAH
+                    <span
+                        class='accent'>/</span> людина
+                </h4>
+                <a href='#call'
+                   class='btn btn--sm'>Забронювати</a>
             </div>
         </div>
     </div>
@@ -397,10 +430,8 @@
             src='./img/title-mask-gray.png'
             alt='gary mask'
             class='section__mask section__mask--sm'>
-        <img
-            src='./img/equipment.png'
-            alt='our pros'
-            class='section__title'>
+        <h2
+            class='section__title'>Безпека та екіпірування</h2>
     </div>
     <p class='section__question'>
         Чому з нами безпечно?</p>
@@ -495,48 +526,46 @@
     </div>
 </section>
 
-<section
-    class='bike section section--up'>
-    <div
-        class='section__header'>
-        <img
-            src='./img/title-mask.png'
-            alt='orange mask'
-            class='section__mask section__mask--lg'>
-        <img
-            src='./img/title-mask-gray.png'
-            alt='gary mask'
-            class='section__mask section__mask--sm'>
-        <img
-            src='./img/bike.png'
-            alt='our bikes'
-            class='section__title'>
-    </div>
-    <div
-        class='bike__container'>
-        <p class='section__question'>
-            T2 250</p>
-        <ul class='bike__list'>
-            <li class='bike__item'>Двигун об'ємом 233 куб. см, забезпечує плавну та корисну потужність, ідеально підходить для їзди по пересіченій місцевості та бездоріжжю.</li>
-            <li class='bike__item'>5-ступінчаста коробка передач, щоб отримати від двигуна оптимальну потужність і крутний момент.</li>
-            <li class='bike__item'>
-                <img
-                    src='./img/bike-logo.png'
-                    alt='kayo'
-                    class='bike__logo'
-                >
-                <img
-                    src='./img/bike-img.png'
-                    alt='kayo t2'
-                    class='bike__img'
-                >
-            </li>
-            <li class='bike__item'>Підвіска поглинає нерівності та допомагає маневрувати на пересіченій місцевості.</li>
-            <li class='bike__item'>Міцна рама розроблена, щоб витримувати придільні навантаження, зберігаючи при цьому легку вагу.</li>
-            <li class='bike__item'>Електричний стартер, запускає T2 простим натисканням кнопки.</li>
-        </ul>
-    </div>
-</section>
+<!--<section-->
+<!--    class='bike section section&#45;&#45;up'>-->
+<!--    <div-->
+<!--        class='section__header'>-->
+<!--        <img-->
+<!--            src='./img/title-mask.png'-->
+<!--            alt='orange mask'-->
+<!--            class='section__mask section__mask&#45;&#45;lg'>-->
+<!--        <img-->
+<!--            src='./img/title-mask-gray.png'-->
+<!--            alt='gary mask'-->
+<!--            class='section__mask section__mask&#45;&#45;sm'>-->
+<!--        <h2-->
+<!--            class='section__title'>Наші мотоцикли</h2>-->
+<!--    </div>-->
+<!--    <div-->
+<!--        class='bike__container'>-->
+<!--        <p class='section__question'>-->
+<!--            T2 250</p>-->
+<!--        <ul class='bike__list'>-->
+<!--            <li class='bike__item'>Двигун об'ємом 233 куб. см, забезпечує плавну та корисну потужність, ідеально підходить для їзди по пересіченій місцевості та бездоріжжю.</li>-->
+<!--            <li class='bike__item'>5-ступінчаста коробка передач, щоб отримати від двигуна оптимальну потужність і крутний момент.</li>-->
+<!--            <li class='bike__item'>-->
+<!--                <img-->
+<!--                    src='./img/bike-logo.png'-->
+<!--                    alt='kayo'-->
+<!--                    class='bike__logo'-->
+<!--                >-->
+<!--                <img-->
+<!--                    src='./img/bike-img.png'-->
+<!--                    alt='kayo t2'-->
+<!--                    class='bike__img'-->
+<!--                >-->
+<!--            </li>-->
+<!--            <li class='bike__item'>Підвіска поглинає нерівності та допомагає маневрувати на пересіченій місцевості.</li>-->
+<!--            <li class='bike__item'>Міцна рама розроблена, щоб витримувати придільні навантаження, зберігаючи при цьому легку вагу.</li>-->
+<!--            <li class='bike__item'>Електричний стартер, запускає T2 простим натисканням кнопки.</li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</section>-->
 
 <section
     class='gallery section'>
@@ -550,14 +579,17 @@
             src='./img/title-mask-gray.png'
             alt='gary mask'
             class='section__mask section__mask--sm'>
-        <img
-            src='./img/gallery.png'
-            alt='gallery'
-            class='section__title'>
+        <h2
+            class='section__title'>Галерея</h2>
     </div>
-    <div class='gallery__instagram'>
-        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-        <div class="elfsight-app-747fad29-2554-4363-b21f-15985b536023"></div>
+    <div
+        class='gallery__instagram'>
+        <script
+            src='https://static.elfsight.com/platform/platform.js'
+            data-use-service-core
+            defer></script>
+        <div
+            class='elfsight-app-747fad29-2554-4363-b21f-15985b536023'></div>
     </div>
 </section>
 
@@ -575,10 +607,8 @@
             src='./img/title-mask-gray.png'
             alt='gary mask'
             class='section__mask section__mask--sm'>
-        <img
-            src='./img/about.png'
-            alt='about us'
-            class='section__title'>
+        <h2
+            class='section__title'>Про нас</h2>
     </div>
 
     <p class='about__text'>Наш прокат було засновано у 2014 році. Починався він із невеликих пітбайків, і був одним із перших прокатів в Україні. Ми піонери та основоположники багатьох базових систем та лайфхаків у цьому бізнесі. Більшість конкурентів сміливо беруть собі на озброєння і всіляко копіюють наші напрацювання. Але нас не лякає конкуренція, адже ми впевнені, що екстрім наданий нами один з найкращих за якістю у сфері прокату позашляхових мотоциклів в Україні. І скажемо більше! Ми раді, що останніми роками ендуро-тема в нашій країні дуже швидко розвивається, і у багатьох людей з'явилося нове класне спортивне захоплення.
@@ -598,14 +628,6 @@
             src='./img/title-mask.png'
             alt='orange mask'
             class='section__mask section__mask--lg'>
-        <!--        <img-->
-        <!--            src='./img/title-mask-gray.png'-->
-        <!--            alt='gary mask'-->
-        <!--            class='section__mask section__mask&#45;&#45;sm'>-->
-        <!--        <img-->
-        <!--            src='./img/contacts.png'-->
-        <!--            alt='contacts'-->
-        <!--            class='section__title'>-->
     </div>
     <form
         class='call__form'>
@@ -649,10 +671,8 @@
             src='./img/title-mask-gray.png'
             alt='gary mask'
             class='section__mask section__mask--sm'>
-        <img
-            src='./img/contacts.png'
-            alt='contacts'
-            class='section__title'>
+        <h2
+            class='section__title'>Контакты</h2>
     </div>
     <div
         class='contacts__item'>
@@ -667,7 +687,7 @@
             class='contacts__info'>
             Київ: вулиця Пирогівський шлях 186
             <br>
-            <a href='tel:+380637370846'>+38 063 737 0846</a>
+            <a href='tel:+380938627846'>+38(093)862-78-46</a>
             <br>
             Графік роботи:
             <br>
@@ -688,7 +708,7 @@
             Одеса: с. Набережне,
             Гідропорт
             <br>
-            <a href='tel:+380637370846'>+38 063 737 0846</a>
+            <a href='tel:+380938627846'>+38(093)862-78-46</a>
             <br>
             Графік роботи:
             <br>
@@ -780,13 +800,13 @@
         class='footer__logo'>
     <p class='footer__rights'>© All Rights Reserved EnduroNaprokat
                               info@enduronaprokat.com</p>
-<!--    <div-->
-<!--        class='footer__policy'>-->
-<!--        <a href=''-->
-<!--           class='footer__link'>Політика конфіденційності</a>-->
-<!--        <a href=''-->
-<!--           class='footer__link'>Політика Cookies</a>-->
-<!--    </div>-->
+    <!--    <div-->
+    <!--        class='footer__policy'>-->
+    <!--        <a href=''-->
+    <!--           class='footer__link'>Політика конфіденційності</a>-->
+    <!--        <a href=''-->
+    <!--           class='footer__link'>Політика Cookies</a>-->
+    <!--    </div>-->
 </footer>
 
 <a

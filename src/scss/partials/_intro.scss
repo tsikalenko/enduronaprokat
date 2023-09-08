@@ -1,18 +1,22 @@
 @import "colors";
+@import "mixins";
 
 .intro {
   background: $bg-dark-mask-color url("./img/intro.jpg") center / cover fixed;
   background-blend-mode: color;
   color: $main-color;
   padding: 100px 0;
-  height: 120vh;
+  height: 110vh;
+  min-height: 700px;
 
   position: relative;
 
   &__title {
-    width: 90%;
-    max-width: 500px;
     margin-bottom: 50px;
+    font-size: 70px;
+    font-family: 'Rubik Dirt', cursive;
+    text-align: center;
+    color: $accent-color;
   }
 
   &__description {
@@ -21,5 +25,32 @@
     font-weight: 500;
     text-align: center;
     margin-bottom: 40px;
+  }
+
+  &__btn{
+    position: relative;
+    @include flex();
+  }
+
+  &__circle{
+    position: absolute;
+    stroke: $accent-color;
+    stroke-width: 10px;
+    fill: none;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    animation: 1.5s resizing__circle linear infinite;
+  }
+}
+
+@keyframes resizing__circle {
+  0%{
+    transform: scale(1);
+    opacity: 100%;
+  }
+  100%{
+    transform: scale(2);
+    opacity: 0;
   }
 }
