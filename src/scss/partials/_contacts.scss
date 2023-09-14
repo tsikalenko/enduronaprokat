@@ -4,17 +4,23 @@
 .contacts {
   padding-top: 200px;
 
+  &__maps {
+    @include respond(laptop) {
+      @include flex();
+    }
+  }
+
   &__item {
     position: relative;
 
-    @include respond(laptop){
-      @include flex();
+    @include respond(laptop) {
+      @include flex($dir: 'column-reverse');
       width: 100%;
-      max-width: 1000px;
-      margin-bottom: 50px;
+      max-width: 500px;
+      margin-right: 50px;
 
-      &:last-child{
-        margin-bottom: 0;
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
@@ -25,7 +31,7 @@
     height: 70vh;
 
     @include respond(laptop) {
-      max-width: 700px;
+      max-width: 500px;
     }
   }
 
@@ -39,14 +45,31 @@
     right: 0;
     padding: 15px;
 
-    @include respond(laptop){
+    @include respond(laptop) {
       position: relative;
       flex-grow: 1;
       font-size: 16px;
     }
   }
 
-  &__social{
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    @include respond(laptop){
+      font-size: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__text {
+    @include respond(laptop){
+      text-align: center;
+    }
+  }
+
+  &__social {
     margin-top: 30px;
   }
 }
