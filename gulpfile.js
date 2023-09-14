@@ -40,10 +40,12 @@ function buildJS() {
 }
 
 function imgMin() {
-    return gulp
-        .src('./src/img/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('./dist/img/'));
+    return (
+        gulp
+            .src('./src/img/*')
+            // .pipe(imagemin())
+            .pipe(gulp.dest('./dist/img/'))
+    );
 }
 
 export const clean = () => {
