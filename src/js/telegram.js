@@ -22,7 +22,8 @@ form.addEventListener('submit', (e) => {
             `New lead
 email: ${email}
 phone: ${phone}
-name: ${name}`,
+name: ${name} 
+service: ${service}`,
         ).then((response) => {
             if (response.ok) {
                 success.classList.add('call__notification--open');
