@@ -10,6 +10,7 @@ form.addEventListener('submit', (e) => {
     const email = form.email.value;
     const phone = form.phone.value;
     const name = form.name.value;
+    const service = form.service.value;
     const send = form.send;
 
     if (email.length === 0 || phone.length === 0 || name.length === 0) {

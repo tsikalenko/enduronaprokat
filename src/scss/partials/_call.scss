@@ -2,17 +2,72 @@
 @import "colors";
 
 .call{
-  padding: 200px 0 150px;
-  background: $bg-dark-mask-color url("./img/call-bg.jpg") center / cover;
-  background-blend-mode: color;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: none;
+
+  &--open{
+    @include flex($dir: 'column');
+  }
+
+  &__bg{
+    content: '';
+    background: $bg-dark-mask-color url("./img/call-bg.jpg") center / cover;
+    background-blend-mode: color;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  &__cross{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  &__line{
+    height: 5px;
+    position: relative;
+    background-color: $main-color;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    margin: 0;
+    translate: 0 430%;
+
+        //top: 0;
+    &:last-child{
+      transform: rotate(-45deg);
+      translate: 0 350%;
+    }
+  }
+
+  &__title{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    color: $accent-color;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+  }
 
   &__form{
     @include flex($dir: column);
-    width: 100%;
+    width: 80%;
+    max-width: 500px;
   }
 
   &__input{
-    width: 80%;
+    width: 100%;
     max-width: 500px;
     margin: 10px 0;
     height: 50px;

@@ -2,7 +2,7 @@
 @import "mixins";
 
 .pros {
-  padding: 120px 0;
+  padding-bottom: 50px;
 
   &__list {
     @include flex($dir: 'column');

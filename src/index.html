@@ -142,6 +142,7 @@
             class='burger__line'></div>
     </div>
 </header>
+
 <section
     class='intro container'
     id='main'>
@@ -153,11 +154,12 @@
     </p>
     <div
         class='intro__btn'>
-        <a
-            href='#call'
-            class='btn'>
+        <button
+            class='btn'
+            onclick='POPOpen()'
+        >
             Замовити
-        </a>
+        </button>
         <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 250 250'
@@ -255,6 +257,133 @@
 </section>
 
 <section
+    class='tour section section--short'
+    id='tours'>
+    <div
+        class='section__header'>
+        <img
+            src='./img/title-mask.png'
+            alt='orange mask'
+            class='section__mask section__mask--lg'>
+        <img
+            src='./img/title-mask-gray.png'
+            alt='gary mask'
+            class='section__mask section__mask--sm'>
+        <h2
+            class='section__title'>Наші тури</h2>
+    </div>
+    <img
+        src='./img/tours-img.png'
+        alt='Men in helmet'
+        class='section__img section__img--right'>
+    <div
+        class='tour__variants'
+        style='background-image: url("./img/tour-bg-main.jpg")'>
+        <div
+            class='tour__item'
+            style='background-image: url("./img/tour-bg-1.jpg")'>
+            <div
+                class='tour__container'>
+                <h4 class='tour__name'>Мото тур
+                    <br>"Light"
+                </h4>
+                <ul class='tour__list'>
+                    <li class='tour__text'>Наш мотоцикл</li>
+                    <li class='tour__text'>Наше екіпірування</li>
+                    <li class='tour__text'>Інструктаж 30 хвилин</li>
+                    <li class='tour__text'>2 години катання</li>
+                    <li class='tour__text'>Вода</li>
+                    <li class='tour__text'>Весь захід до 3-х годин</li>
+                </ul>
+                <h4 class='tour__cost'>3000
+                    <br> UAH
+                    <span
+                        class='accent'>/</span> людина
+                </h4>
+                <button
+                    class='btn btn--sm'
+                    onclick='POPOpen()'>Забронювати
+                </button>
+            </div>
+        </div>
+        <div
+            class='tour__item'
+            style='background-image: url("./img/tour-bg-2.png")'>
+            <div
+                class='tour__container'>
+                <h4 class='tour__name'>Мото тур
+                    <br>"All Day"
+                </h4>
+                <ul class='tour__list'>
+                    <li class='tour__text'>Наш мотоцикл</li>
+                    <li class='tour__text'>Наше екіпірування</li>
+                    <li class='tour__text'>Інструктаж 30 хвилин</li>
+                    <li class='tour__text'>Понад 6 годин катання</li>
+                    <li class='tour__text'>Вода / Обід</li>
+                    <li class='tour__text'>Близько 100 км шляху</li>
+                </ul>
+                <h4 class='tour__cost'>8000
+                    <br> UAH
+                    <span
+                        class='accent'>/</span> людина
+                </h4>
+                <button
+                    class='btn btn--sm'
+                    onclick='POPOpen()'>Забронювати
+                </button>
+            </div>
+        </div>
+        <div
+            class='tour__item'
+            style='background-image: url("./img/tour-bg-3.jpg")'>
+            <div
+                class='tour__container'>
+                <h4 class='tour__name'>Індивідуальне
+                    <br>заняття
+                </h4>
+                <ul class='tour__list'>
+                    <li class='tour__text'>Наш мотоцикл</li>
+                    <li class='tour__text'>Наше екіпірування</li>
+                    <li class='tour__text'>Інструктаж 30 хвилин</li>
+                    <li class='tour__text'>2 години катання</li>
+                    <li class='tour__text'>Вода</li>
+                    <li class='tour__text'>Весь захід до 3-х годин</li>
+                </ul>
+                <h4 class='tour__cost'>5000
+                    <br> UAH
+                    <span
+                        class='accent'>/</span> людина
+                </h4>
+                <button
+                    class='btn btn--sm'
+                    onclick='POPOpen()'>Забронювати
+                </button>
+            </div>
+        </div>
+        <div
+            class='tour__item'
+            style='background-image: url("./img/tour-bg-4.jpg")'>
+            <div
+                class='tour__container'>
+                <h4 class='tour__name'>Подарункові
+                    <br>сертифікати
+                </h4>
+                <ul class='tour__list'>
+                    <li class='tour__text'>Індивідуальне <br> заняття</li>
+                    <li class='tour__text'>Мото тур <br> "All Day"</li>
+                    <li class='tour__text'>Мото тур <br> "Light"</li>
+                </ul>
+                <h4 class='tour__cost'>5000
+                    <br> UAH
+                    <span
+                        class='accent'>/</span> людина
+                </h4>
+                <button class='btn btn--sm' onclick='POPOpen()'>Забронювати</button>
+            </div>
+        </div>
+</section>
+
+<section
     class='conditions section'
     id='conditions'>
     <div
@@ -312,107 +441,6 @@
                 class='conditions__info'>
                 <p class='conditions__title'>Документ</p>
                 <p class='conditions__text'>При собі необхідно мати паспорт або посвідчення водія</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section
-    class='tour section section--short'
-    id='tours'>
-    <div
-        class='section__header'>
-        <img
-            src='./img/title-mask.png'
-            alt='orange mask'
-            class='section__mask section__mask--lg'>
-        <img
-            src='./img/title-mask-gray.png'
-            alt='gary mask'
-            class='section__mask section__mask--sm'>
-        <h2
-            class='section__title'>Наші тури</h2>
-    </div>
-    <img
-        src='./img/tours-img.png'
-        alt='Men in helmet'
-        class='section__img section__img--right'>
-    <div
-        class='tour__variants'
-        style='background-image: url("./img/tour-bg-main.jpg")'>
-        <div
-            class='tour__item'
-            style='background-image: url("./img/tour-bg-1.jpg")'>
-            <div
-                class='tour__container'>
-                <h4 class='tour__name'>Мото тур
-                    <br>"Light"
-                </h4>
-                <ul class='tour__list'>
-                    <li class='tour__text'>Наш мотоцикл</li>
-                    <li class='tour__text'>Наше екіпірування</li>
-                    <li class='tour__text'>Інструктаж 30 хвилин</li>
-                    <li class='tour__text'>2 години катання</li>
-                    <li class='tour__text'>Вода</li>
-                    <li class='tour__text'>Весь захід до 3-х годин</li>
-                </ul>
-                <h4 class='tour__cost'>3000
-                    <br> UAH
-                    <span
-                        class='accent'>/</span> людина
-                </h4>
-                <a href='#call'
-                   class='btn btn--sm'>Забронювати</a>
-            </div>
-        </div>
-        <div
-            class='tour__item'
-            style='background-image: url("./img/tour-bg-2.png")'>
-            <div
-                class='tour__container'>
-                <h4 class='tour__name'>Мото тур
-                    <br>"All Day"
-                </h4>
-                <ul class='tour__list'>
-                    <li class='tour__text'>Наш мотоцикл</li>
-                    <li class='tour__text'>Наше екіпірування</li>
-                    <li class='tour__text'>Інструктаж 30 хвилин</li>
-                    <li class='tour__text'>Понад 6 годин катання</li>
-                    <li class='tour__text'>Вода / Обід</li>
-                    <li class='tour__text'>Близько 100 км шляху</li>
-                </ul>
-                <h4 class='tour__cost'>8000
-                    <br> UAH
-                    <span
-                        class='accent'>/</span> людина
-                </h4>
-                <a href='#call'
-                   class='btn btn--sm'>Забронювати</a>
-            </div>
-        </div>
-        <div
-            class='tour__item'
-            style='background-image: url("./img/tour-bg-3.jpg")'>
-            <div
-                class='tour__container'>
-                <h4 class='tour__name'>Індивідуальне
-                    <br>заняття
-                </h4>
-                <ul class='tour__list'>
-                    <li class='tour__text'>Наш мотоцикл</li>
-                    <li class='tour__text'>Наше екіпірування</li>
-                    <li class='tour__text'>Інструктаж 30 хвилин</li>
-                    <li class='tour__text'>2 години катання</li>
-                    <li class='tour__text'>Вода</li>
-                    <li class='tour__text'>Весь захід до 3-х годин</li>
-                </ul>
-                <h4 class='tour__cost'>5000
-                    <br> UAH
-                    <span
-                        class='accent'>/</span> людина
-                </h4>
-                <a href='#call'
-                   class='btn btn--sm'>Забронювати</a>
             </div>
         </div>
     </div>
@@ -593,71 +621,6 @@
     </div>
 </section>
 
-
-<section
-    class='about section'
-    id='about'>
-    <div
-        class='section__header'>
-        <img
-            src='./img/title-mask.png'
-            alt='orange mask'
-            class='section__mask section__mask--lg'>
-        <img
-            src='./img/title-mask-gray.png'
-            alt='gary mask'
-            class='section__mask section__mask--sm'>
-        <h2
-            class='section__title'>Про нас</h2>
-    </div>
-
-    <p class='about__text'>Наш прокат було засновано у 2014 році. Починався він із невеликих пітбайків, і був одним із перших прокатів в Україні. Ми піонери та основоположники багатьох базових систем та лайфхаків у цьому бізнесі. Більшість конкурентів сміливо беруть собі на озброєння і всіляко копіюють наші напрацювання. Але нас не лякає конкуренція, адже ми впевнені, що екстрім наданий нами один з найкращих за якістю у сфері прокату позашляхових мотоциклів в Україні. І скажемо більше! Ми раді, що останніми роками ендуро-тема в нашій країні дуже швидко розвивається, і у багатьох людей з'явилося нове класне спортивне захоплення.
-                           Як сказав колись один філософ: "Всі їздитимуть на ендуро"!</p>
-    <img
-        src='./img/about-img.png'
-        alt='two riders'
-        class='about__img'>
-</section>
-
-<section
-    id='call'
-    class='call section'>
-    <div
-        class='section__header'>
-        <img
-            src='./img/title-mask.png'
-            alt='orange mask'
-            class='section__mask section__mask--lg'>
-    </div>
-    <form
-        class='call__form'>
-        <input
-            type='email'
-            class='call__input'
-            name='email'
-            placeholder='Email'>
-        <input
-            type='tel'
-            class='call__input'
-            name='phone'
-            placeholder='Телефон'>
-        <input
-            type='text'
-            class='call__input'
-            name='name'
-            placeholder="І'мя">
-        <p class='call__notification call__notification--error'>Необхідно заповнити всі поля</p>
-        <input
-            type='submit'
-            value='Замовити'
-            class='call__input call__input--submit'
-            name='send'>
-        <p class='call__notification call__notification--reject'>Шось пішло не так спробуйте ще раз</p>
-        <p class='call__notification call__notification--success'>Запит успішно надісланий</p>
-    </form>
-
-</section>
-
 <section
     class='contacts section'
     id='contacts'>
@@ -691,7 +654,8 @@
                 <p class='contacts__text'>
                     вулиця Пирогівський шлях 186
                     <br>
-                    <a href='tel:+380938627846'>+38(093)862-78-46</a>
+                    <a href='tel:+380938627846'
+                       class='contacts__phone'>+38(093)862-78-46</a>
                     <br>
                     Графік роботи:
                     <br>
@@ -715,7 +679,8 @@
                     с. Набережне,
                     Гідропорт
                     <br>
-                    <a href='tel:+380938627846'>+38(093)862-78-46</a>
+                    <a href='tel:+380938627846'
+                       class='contacts__phone'>+38(093)862-78-46</a>
                     <br>
                     Графік роботи:
                     <br>
@@ -784,6 +749,39 @@
     </div>
 </section>
 
+<section
+    class='about section'
+    id='about'>
+    <div
+        class='section__header'>
+        <img
+            src='./img/title-mask.png'
+            alt='orange mask'
+            class='section__mask section__mask--lg'>
+        <img
+            src='./img/title-mask-gray.png'
+            alt='gary mask'
+            class='section__mask section__mask--sm'>
+        <h2
+            class='section__title'>Про нас</h2>
+    </div>
+
+    <p class='about__text'>Наш прокат було засновано у 2014 році. Починався він із невеликих пітбайків, і був одним із перших прокатів в Україні. Ми піонери та основоположники багатьох базових систем та лайфхаків у цьому бізнесі. Більшість конкурентів сміливо беруть собі на озброєння і всіляко копіюють наші напрацювання. Але нас не лякає конкуренція, адже ми впевнені, що екстрім наданий нами один з найкращих за якістю у сфері прокату позашляхових мотоциклів в Україні. І скажемо більше! Ми раді, що останніми роками ендуро-тема в нашій країні дуже швидко розвивається, і у багатьох людей з'явилося нове класне спортивне захоплення.
+                           Як сказав колись один філософ: "Всі їздитимуть на ендуро"!</p>
+    <img
+        src='./img/about-img.png'
+        alt='two riders'
+        class='about__img'>
+
+    <div
+        class='section__header'>
+        <img
+            src='./img/title-mask.png'
+            alt='orange mask'
+            class='section__mask section__mask--lg'>
+    </div>
+</section>
+
 <footer
     class='footer'>
     <ul class='footer__menu menu menu--row'>
@@ -834,6 +832,60 @@
 	C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z' />
 </svg>
 </a>
+
+<section
+    id='call'
+    class='call section'>
+    <div
+        class='call__bg'></div>
+    <div
+        class='call__cross'>
+        <div
+            class='call__line'>
+        </div>
+        <div
+            class='call__line'>
+        </div>
+    </div>
+    <h3 class='call__title'>Замовити дзвінок</h3>
+    <form
+        class='call__form'>
+        <input
+            type='email'
+            class='call__input'
+            name='email'
+            placeholder='Email'>
+        <input
+            type='tel'
+            class='call__input'
+            name='phone'
+            placeholder='Телефон'>
+        <input
+            type='text'
+            class='call__input'
+            name='name'
+            placeholder="І'мя">
+        <select
+            class='call__input'
+            name='service'>
+            <option value='individual'>Індивідуальне заняття</option>
+            <option value='AllDay'>Мото тур "All Day"</option>
+            <option value='Light'>Мото тур "Light"</option>
+            <option value='certificate'>Подарунковий сертифікат</option>
+            <option value='other'>Інше</option>
+        </select>
+        <p class='call__notification call__notification--error'>Необхідно заповнити всі поля</p>
+        <input
+            type='submit'
+            value='Замовити'
+            class='call__input call__input--submit'
+            name='send'>
+        <p class='call__notification call__notification--reject'>Шось пішло не так спробуйте ще раз</p>
+        <p class='call__notification call__notification--success'>Запит успішно надісланий</p>
+    </form>
+
+</section>
+
 <script
     src='./scripts.min.js'>
 </script>
