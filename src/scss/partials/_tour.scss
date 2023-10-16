@@ -2,7 +2,6 @@
 @import "colors";
 
 .tour {
-  padding-top: 80px;
 
   &__variants {
     width: 100%;
@@ -10,11 +9,12 @@
     background-size: cover;
     @include flex($dir: 'column');
 
-    @include respond(tablet) {
-      @include flex();
-      padding: 100px 0 100px;
-    }
+    //@include respond(tablet) {
+    //  @include flex();
+    //  padding: 100px 0 100px;
+    //}
     @include respond(laptop) {
+      padding: 100px 0 100px;
       @include flex();
     }
   }
@@ -27,14 +27,18 @@
     height: 100vh;
     width: 100%;
 
-    @include respond(tablet) {
-      background: none !important;
-      @include flex($dir: 'column', $justify: 'space-between');
-      height: auto;
-    }
+    //@include respond(tablet) {
+    //  background: none !important;
+    //  @include flex($dir: 'column', $justify: 'space-between');
+    //  height: auto;
+    //}
 
     @include respond(laptop) {
+      background: none !important;
+      @include flex($dir: 'column', $justify: 'space-between');
       width: auto;
+      height: auto;
+
       margin-right: 50px;
       &:last-child {
         margin-right: 0;
@@ -48,10 +52,10 @@
   }
 
   &__container {
-    @include flex($dir: 'column');
+    @include flex($dir: 'column', $justify: 'space-between');
     padding: 20px 20px;
     width: 250px;
-
+    height: 462px;
     background-color: $main-bg-transparent-color;
     border-radius: 20px;
 
